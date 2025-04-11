@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moto Location</title>
     <link rel="stylesheet" href="css/styles.css">
-    <!-- Carrega a API do Google Maps primeiro -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg"></script>
 </head>
 <body>
     <div class="container">
@@ -34,11 +32,8 @@
     <!-- Carrega nossos scripts -->
     <script src="js/map-init.js"></script>
     <script src="js/script.js"></script>
-    <script>
-        // Inicializa o mapa quando a página carregar
-        window.onload = function() {
-            initMap();
-        };
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap">
     </script>
 </body>
-</html> 
+</html>
